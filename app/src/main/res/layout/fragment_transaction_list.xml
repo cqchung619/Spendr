@@ -1,0 +1,22 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/fragment_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.cuong.spendr.Fragments.TransactionListFragment">
+    </android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/fragment_transaction_list_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:visibility="invisible"
+        android:text="@string/fragment_transaction_list_no_transactions"/>
+</FrameLayout>

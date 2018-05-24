@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Spendr</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Toast Strings -->
+    <string name="toast_signin_welcome">Welcome %1$s</string>
+    <string name="toast_anonymous_signin_success">Signed in anonymously!</string>
+    <string name="toast_anonymous_signin_fail">Failed to sign in…</string>
+    <string name="toast_transaction_deleted">Transaction Deleted</string>
+
+    <!-- AlertDialog Strings -->
+    <string name="dialog_title_budget">Enter Monthly Budget</string>
+    <string name="dialog_title_year">Year</string>
+    <string name="dialog_choose_export_location">Choose export location:</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string-array name="dialog_array_export_locations">
+        <item>Local</item>
+    </string-array>
+
+    <!-- Home Menu Strings -->
+    <string name="home_menu_google_signin">Google Sign-In</string>
+    <string name="home_menu_sign_in">Anonymous Sign-In</string>
+    <string name="home_menu_sign_out">Sign Out</string>
+    <string name="home_menu_set_budget">Set Budget</string>
+    <string name="home_menu_change_year">Change Year</string>
+    <string name="home_menu_filter_by_year">Filter by Year</string>
+    <string name="home_menu_export">Export Data</string>
+    <string name="home_menu_delete_transaction">Delete Transaction</string>
+    <string name="home_menu_settings">Settings</string>
+
+    <!-- Bottom Navigation Tab Strings -->
+    <string name="tab_home">Home</string>
+    <string name="tab_transaction_list">Transactions</string>
+    <string name="tab_dashboard">Dashboard</string>
+    <string name="tab_settings">Settings</string>
+
+    <!-- Home Fragment Strings -->
+    <string name="fragment_home_no_budget">Budget Not Set</string>
+
+    <!-- Transaction Fragment Strings -->
+    <string name="fragment_transaction_title">Transaction</string>
+    <string name="fragment_transaction_add">Add Transaction</string>
+    <string name="fragment_transaction_hint_category">Category</string>
+    <string name="fragment_transaction_hint_item_description">Item Description</string>
+    <string name="fragment_transaction_hint_amount">Amount</string>
+    <string name="fragment_transaction_hint_date">Date</string>
+    <string name="fragment_transaction_date_dialog_title">Select the transaction date</string>
+
+    <!-- Transaction List Fragment Strings -->
+    <string name="fragment_transaction_list_no_transactions">No Transactions</string>
+
+    <!-- Dashboard ViewPager Chart Fragment Title Strings -->
+    <string name="dashboard_title_monthly_expense">Monthly Expense Summary</string>
+    <string name="dashboard_title_yearly_expense">Yearly Expense Summary</string>
+
+    <!-- Google Sign-In Web Client ID Strings -->
+    <string name="google_signin_web_client_id">990470105855-5hkf5qs708dj7tgqhqvk9ta1fpo3jcso.apps.googleusercontent.com</string>
+</resources>

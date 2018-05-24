@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home_menu_set_budget"
+        android:title="@string/home_menu_set_budget"/>
+
+    <item
+        android:id="@+id/home_menu_change_year"
+        android:visible="false"
+        android:title="@string/home_menu_change_year"/>
+
+    <item
+        android:id="@+id/home_menu_filter_year"
+        android:visible="false"
+        android:title="@string/home_menu_filter_by_year"/>
+
+    <item
+        android:id="@+id/home_menu_backup"
+        android:title="@string/home_menu_export"/>
+
+    <item
+        android:id="@+id/home_menu_delete"
+        android:visible="false"
+        android:title="@string/home_menu_delete_transaction"/>
+
+    <item
+        android:id="@+id/home_menu_sign_out"
+        android:title="@string/home_menu_sign_out"/>
+
+</menu>
