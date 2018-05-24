@@ -20,26 +20,22 @@ import com.example.cuong.spendr.Models.Transaction;
 import com.example.cuong.spendr.R;
 import com.github.mikephil.charting.charts.BarChart;
 import com.github.mikephil.charting.components.AxisBase;
-import com.github.mikephil.charting.components.Legend;
 import com.github.mikephil.charting.components.XAxis;
 import com.github.mikephil.charting.components.YAxis;
 import com.github.mikephil.charting.data.BarData;
 import com.github.mikephil.charting.data.BarDataSet;
 import com.github.mikephil.charting.data.BarEntry;
 import com.github.mikephil.charting.formatter.IAxisValueFormatter;
-import com.github.mikephil.charting.formatter.IndexAxisValueFormatter;
 import com.github.mikephil.charting.interfaces.datasets.IBarDataSet;
 import com.github.mikephil.charting.utils.ColorTemplate;
 
 import java.text.DateFormatSymbols;
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
-import java.util.Set;
 
 /**
  * Author: Cuong Chung
@@ -62,8 +58,7 @@ public class YearlyExpenseBarChartFragment extends Fragment {
     }
 
     public static YearlyExpenseBarChartFragment newInstance() {
-        YearlyExpenseBarChartFragment fragment = new YearlyExpenseBarChartFragment();
-        return fragment;
+        return new YearlyExpenseBarChartFragment();
     }
 
     @Override
@@ -73,7 +68,7 @@ public class YearlyExpenseBarChartFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_yearly_expense_bar_chart, container, false);
 
@@ -125,9 +120,16 @@ public class YearlyExpenseBarChartFragment extends Fragment {
             }
         });
 
+        Map.Entry<Integer, Double> maxExpense = Stream.of(yearlyExpensesMap).max(new Comparator<Map.Entry<Integer, Double>>() {
+            @Override
+            public int compare(Map.Entry<Integer, Double> o1, Map.Entry<Integer, Double> o2) {
+                return o1.getValue().compareTo(o2.getValue());
+            }
+        }).get();
+
         YAxis yAxis = mYearlyExpenseBarChart.getAxisLeft();
         yAxis.setDrawGridLines(false);
-        yAxis.setAxisMaximum(Double.valueOf(TransactionVault.getInstance().getBudget().getStartBalance() * 12).floatValue());
+        yAxis.setAxisMaximum(maxExpense.getValue().floatValue() + 200);
         yAxis.setLabelCount(10);
         yAxis.setValueFormatter(new IAxisValueFormatter() {
             @Override
