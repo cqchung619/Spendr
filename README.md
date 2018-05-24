@@ -9,7 +9,6 @@ Spendr is a budgeting app that allows you to set a monthly budget and track your
 
 ---
 # Screenshots
-<img align="left" src="https://raw.githubusercontent.com/cqchung619/Spendr/master/images/01%20Home.png" height="500" width="250">
-<img align="center" src="https://raw.githubusercontent.com/cqchung619/Spendr/master/images/02%20Transaction%20List.png" height="500" width="250">
-<img align="left" src="https://raw.githubusercontent.com/cqchung619/Spendr/master/images/03-1%20Dashboard%20Pie%20Chart.png" height="500" width="250">
-<img align="center" src="https://raw.githubusercontent.com/cqchung619/Spendr/master/images/03-2%20Dashboard%20Bar%20Chart.png" height="500" width="250">
+| <img src="https://raw.githubusercontent.com/cqchung619/Spendr/master/images/01%20Home.png" height="500" width="250"> | <img src="https://raw.githubusercontent.com/cqchung619/Spendr/master/images/02%20Transaction%20List.png" height="500" width="250"> |
+
+| <img src="https://raw.githubusercontent.com/cqchung619/Spendr/master/images/03-1%20Dashboard%20Pie%20Chart.png" height="500" width="250"> | <img src="https://raw.githubusercontent.com/cqchung619/Spendr/master/images/03-2%20Dashboard%20Bar%20Chart.png" height="500" width="250"> |
